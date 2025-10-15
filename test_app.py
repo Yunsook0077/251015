@@ -49,5 +49,5 @@ if not df.empty:
         mapbox_style="carto-positron", zoom=5)
     st.plotly_chart(fig)
 
-st.caption("공공데이터포털, 오픈메테오, 혹은 WeatherAPI 활용")
+st.caption("국가정보자원관리원 화재로 인해 공공데티터포털 서비스가 중단된 상태")
 
