@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import 다운로드.csv as px
 import requests
 
 st.title("매년 수능일 전국 지역별 날씨 웹앱")
