@@ -3,16 +3,16 @@ import pandas as pd
 import plotly.express as px
 import requests
 
-st.title("매년 수능일 전국 지역별 날씨 웹앱")
+st.title("2015~2024 ⛅️수능일 주요지역 날씨 ⛅️")
 
 # 예시 데이터 또는 API, 실제 수능일 데이터/지역 데이터 활용
-years = list(range(2012, 2026))
-regions = ['서울','부산','대구','인천','광주','대전','울산','세종','경기도','강원도','충청북도','충청남도','전라북도','전라남도','경상북도','경상남도','제주도']
+years = list(range(2015, 2024))
+regions = ['서울','부산','대구','광주','대전','제주도']
 exams = {year: f"{year}-11-3째 목요일" for year in years}  # 실제 수능일 데이터로 교체 권장
 
-selected_year = st.selectbox("연도 선택", years)
+selected_year = st.selectbox("🖍 연도 선택", years)
 selected_date = exams[selected_year]
-selected_region = st.multiselect("지역 선택 (중복 선택 가능)", regions, default=['서울'])
+selected_region = st.multiselect("✨️지역 선택✨️ (중복 선택 가능)", regions, default=['서울'])
 
 st.write(f"수능일: {selected_date}")
 
