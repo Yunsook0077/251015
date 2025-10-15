@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import requests
 
-st.title("2015~2024 ⛅️수능일 주요지역 날씨 ⛅️")
+st.title("⛅️ 2015~2024 수능일 주요지역 날씨 ")
 
 # 예시 데이터 또는 API, 실제 수능일 데이터/지역 데이터 활용
 years = list(range(2015, 2024))
